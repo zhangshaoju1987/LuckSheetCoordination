@@ -5,12 +5,12 @@ const logger = new Logger("ConfigHelp");
 
 let config = config1;
 
-let signalingServerConfigPath = process.env.SignalingServerConfigPath;
-if(signalingServerConfigPath){
+let configPath = process.env.LuckSheetCoordinationServerConfigPath;
+if(configPath){
     logger.info("Command line parameters:%s",process.argv.join(","));
-    logger.info("Load configuration file from deploy path:"+signalingServerConfigPath+"[Please make sure this path is exists and readable]");
+    logger.info("Load configuration file from deploy path:"+configPath+"[Please make sure this path is exists and readable]");
     try{
-        config      = require(signalingServerConfigPath+"/config");
+        config      = require(configPath+"/config");
     }catch(error){
         logger.error("Got error when loading configuration file:%O",error);
         process.exit(1);
