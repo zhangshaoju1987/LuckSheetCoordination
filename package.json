@@ -2,10 +2,11 @@
   "name": "luck_sheet-coordination",
   "version": "1.0.0",
   "description": "LuckSheet 协同模块，使用websocket作为通信协议，使用mongodb作为后端存储；基于官方Java版本进行改造",
-  "main": "index.js",
+  "main": "build/bootstrap.js",
+  "bin": "build/bootstrap.js",
   "scripts": {
     "compile": "tsc -p .",
-    "start": "node "
+    "start": "cross-env DEBUG=\"LuckSheetCoordination:ERROR* LuckSheetCoordination:INFO*\" node build/bootstrap.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/zhangshaoju1987/LuckSheetCoordination#readme",
   "devDependencies": {
+    "@types/node": "^18.0.0",
     "cross-env": "^7.0.3"
   }
 }

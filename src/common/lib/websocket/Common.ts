@@ -1,0 +1,1 @@
+export const WS_SUBPROTOCOL:string = 'protoo';
