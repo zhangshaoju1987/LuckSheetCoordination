@@ -19,7 +19,28 @@
   },
   "homepage": "https://github.com/zhangshaoju1987/LuckSheetCoordination#readme",
   "devDependencies": {
+    "@types/debug": "^4.1.7",
+    "@types/express": "^4.17.13",
     "@types/node": "^18.0.0",
+    "@types/redis": "^4.0.11",
+    "@types/uuid": "^8.3.4",
+    "@types/websocket": "^1.0.5",
     "cross-env": "^7.0.3"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "body-parser": "^1.20.0",
+    "compression": "^1.7.4",
+    "debug": "^4.3.4",
+    "express": "^4.18.1",
+    "helmet": "^5.1.0",
+    "jose": "^4.8.3",
+    "moment": "^2.29.3",
+    "node-ip2region": "^1.0.2",
+    "redis": "^4.1.1",
+    "spdy": "^4.0.2",
+    "url": "^0.11.0",
+    "uuid": "^8.3.2",
+    "websocket": "^1.0.34"
   }
 }
