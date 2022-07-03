@@ -17,5 +17,16 @@ export default  {
     sheet:{
         row_size:500,
         col_size:500
-    }
+    },
+    web_server:{
+        /**如果为false，则为https必须配置tls证书 */
+        isHttpOnly:false,
+        listeningHost:'0.0.0.0',
+        listeningPort:10002,
+        tls       :
+        {
+            cert : `证书路径`,
+            key  : `密钥路径`
+        },
+    },
 }
