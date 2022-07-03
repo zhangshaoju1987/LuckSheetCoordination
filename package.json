@@ -1,0 +1,23 @@
+{
+  "name": "luck_sheet-coordination",
+  "version": "1.0.0",
+  "description": "LuckSheet 协同模块，使用websocket作为通信协议，使用mongodb作为后端存储；基于官方Java版本进行改造",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc -p .",
+    "start": "node "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangshaoju1987/LuckSheetCoordination.git"
+  },
+  "author": "zhangshaoju",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhangshaoju1987/LuckSheetCoordination/issues"
+  },
+  "homepage": "https://github.com/zhangshaoju1987/LuckSheetCoordination#readme",
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
